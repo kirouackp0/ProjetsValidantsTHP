@@ -92,7 +92,7 @@ class HumanPlayer
         elsif health_pack >= 2 && health_pack <= 5
             @life_points += 50
             puts "Bravo, tu as trouvé un pack de +50 points de vie !"
-        elsif health_pack = 6
+        elsif health_pack == 6
             @life_points += 80
             puts "Waow, tu as trouvé un pack de +80 points de vie !"
         end

@@ -4,6 +4,7 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
+=begin
 #accueil
 puts "----------------------------
 | Bienvenue sur Mortal Kombat : Humain versus Machine|
@@ -77,7 +78,7 @@ when "c"
     puts "                                                        "
     puts "                                                        "
     display_menu
-    
+
 when "d" 
     puts "Tu t'en prends à José !"
     player1.attacks(player3)
@@ -89,7 +90,6 @@ end
 
 binding.pry
 
-=begin
 while player1.life_points > 0 && (player1.life_points > 0 || player2.life_points >0)
         break if player1.life_points <= 0 || player2.life_points <= 0 && player2.life_points <= 0
 
