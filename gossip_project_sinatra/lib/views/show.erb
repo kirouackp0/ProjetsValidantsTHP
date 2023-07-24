@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Gossip Details</title>
+</head>
+<body>
+  <h1>Gossip Details</h1>
+  <% if @gossip %>
+    <p>ID: <%= params[:id] %></p>
+    <p>Content: <%= @gossip.content %></p>
+  <% else %>
+    <p>Gossip not found.</p>
+  <% end %>
+</body>
+</html>

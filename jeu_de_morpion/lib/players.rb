@@ -5,5 +5,12 @@ class Player
         @name = name
         @player_marker = player_marker
     end
+=begin
+    def select_position(board, row, column)
+    position = board[row][column]
+    board[row][column] = "x"
+    puts "#{name} selected square #{position}"
+    end
+=end
 end
 

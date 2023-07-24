@@ -17,9 +17,6 @@ class Game
     end
     
     def turn
-        show = Show.new
-        show.display_board(board)
-        board.display_board
         # Ask the current player for their move
         puts "#{current_player.name}, it's your turn!"
         current_player.select_position(board.board_cells)
@@ -51,8 +48,8 @@ class Show
         end
     end
 end
-
 binding.pry
+
 
 #board_case_instance = BoardCase.new
 #board_instace = Board.new

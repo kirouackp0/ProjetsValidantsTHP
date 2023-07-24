@@ -22,14 +22,15 @@ class Board
     ]
     
     winning_combinations.each do |combination|
-        markers = combination.map { |index| board_cases[index].value }
+        markers = combination.map { |index| board_cells[index].value }
         return true if markers.uniq.length == 1 && !markers[0].empty?
         
-        return true if board_cases.all? { |board_case| !board_case.value.empty? } 
+        return true if board_cells.all? { |board_cells| !board_cells.value.empty? } 
         false
+        end
     end
 end
-end
+
 
 =begin
 @board = [
@@ -38,9 +39,5 @@ end
 ["| 7", "8", "9 |"],
 ]
 
-def select_position(board, row, column)
-    position = board[row][column]
-    board[row][column] = "x"
-    puts "#{name} selected square #{position}"
-end
+
 =end

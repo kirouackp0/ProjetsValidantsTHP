@@ -6,19 +6,3 @@ class BoardCase
         @cell_id = cell_id
     end
 end 
-
-
-
-
-=begin
-
-def cell.empty?
-    if @value == ' '
-        return true
-    else 
-        false
-    end
-end
-end
-
-=end
